@@ -18,20 +18,25 @@ const App = {
   },
   methods: {
     prev() {
-      // когда нажимаем кнопку назад
+/*       if (this.activeIndex > 0) {
+        this.activeIndex --
+        this.btnTitle = 'Вперёд'
+      } else {
+        this.activeIndex = 0
+      } */
     },
     reset() {
       // начать заново
     },
     nextOfFinish() {
-      // кнопка вперед или закончить
-    },
-    setActive(idx) {
       if (this.activeIndex < 4) {
         this.activeIndex ++
       } else {
         this.btnTitle = 'Закончить'
       }
+    },
+    setActive(idx) {
+
     }
   },
   computed: {

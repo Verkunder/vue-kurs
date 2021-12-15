@@ -96,7 +96,7 @@ h3 {
   opacity: 0.8;
 }
 
-.btn:disabled {
+.btn.disabled {
   background: #eee!important;
   border: #ddd!important;
   color: #aaa!important;
@@ -214,4 +214,9 @@ h3 {
 .steps-item.active span {
   font-weight: bold;
   color: #ffffff;
+}
+label {
+  display: block;
+  padding-left: 50px;
+  margin-top: -25px;
 }

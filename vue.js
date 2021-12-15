@@ -13,30 +13,33 @@ const App = {
         {title: 'Vuex', text: 'В блоке вы узнаете абсолютно все про Vuex. Вы узнаете как работать с данными, какие есть лучшие практики по их программированию и структурированию. Все на практике.'},
         {title: 'Composition', text: 'Одним из наиболее важных обновлений в Vue 3 является появление альтернативного синтаксиса Composition API. В этом блоке вы узнаете все, чтобы полностью пользоваться данными синтаксисом на практических примерах. Помимо этого вы узнаете как работать совместно с Vue Router и Vuex.'},
       ],
-      btnTitle: 'Вперёд'
+      btnTitle: 'Вперёд',
+      displayIndex: 0
     }
   },
   methods: {
-    prev() {
-/*       if (this.activeIndex > 0) {
-        this.activeIndex --
-        this.btnTitle = 'Вперёд'
-      } else {
-        this.activeIndex = 0
-      } */
-    },
-    reset() {
-      // начать заново
-    },
-    nextOfFinish() {
+    minusButton () {
+      if (this.activeIndex != 0) {
+        this.activeIndex--
+      }
       if (this.activeIndex < 4) {
-        this.activeIndex ++
-      } else {
-        this.btnTitle = 'Закончить'
+        this.btnTitle = 'Вперёд'
       }
     },
-    setActive(idx) {
-
+    plusButton () {
+      if (this.activeIndex != 4) {
+        this.activeIndex++
+      }
+      if (this.activeIndex > 3) {
+        this.btnTitle = 'Закончить'
+      }
+      this.displayIndex++
+    },
+    reset () {
+      this.activeIndex = 0,
+      this.displayIndex++,
+      this.displayIndex = 0,
+      this.btnTitle = 'Вперёд'
     }
   },
   computed: {

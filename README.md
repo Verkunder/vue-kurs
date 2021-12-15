@@ -1,4 +1,4 @@
-# vue-kurs
+# 06-vue-components
 
 ## Project setup
 ```
@@ -13,11 +13,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration

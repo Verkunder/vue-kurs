@@ -11,9 +11,9 @@
           :color="active === 'two' ? 'primary': ''"
           @action="active = 'two'">Two
       </app-button>
-      <app-text-one></app-text-one>
-      <app-text-two></app-text-two>
     </div>
+    <app-text-one v-if="active === 'one'"></app-text-one>
+    <app-text-two v-if="active === 'two'"></app-text-two>
   </div>
 </template>
 

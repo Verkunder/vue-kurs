@@ -3,17 +3,18 @@
     <div class="card">
       <h2>Динамические и ассинхронные компоненты</h2>
       <app-button
-          :color="active === 'one' ? 'primary' : '' "
+          :color="oneColor"
           @action="active = 'one'">
         One
       </app-button>
       <app-button
-          :color="active === 'two' ? 'primary': ''"
+          :color="twoColor"
           @action="active = 'two'">Two
       </app-button>
     </div>
-    <app-text-one v-if="active === 'one'"></app-text-one>
-    <app-text-two v-if="active === 'two'"></app-text-two>
+    <keep-alive>
+    <component :is="componentName"></component>
+    </keep-alive>
   </div>
 </template>
 
@@ -27,7 +28,18 @@ export default {
       active: 'one' // two
     }
   },
-  components: {AppButton, AppTextOne, AppTextTwo}
+  components: {AppButton, AppTextOne, AppTextTwo},
+  computed: {
+    componentName() {
+      return 'app-text-' + this.active
+    },
+    oneColor() {
+      return this.active === 'one' ? 'primary' : ''
+    },
+    twoColor() {
+      return this.active === 'two' ? 'primary': ''
+    }
+  }
 }
 </script>
 

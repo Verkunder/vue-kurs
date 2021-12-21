@@ -2,12 +2,14 @@
   <div class="container pt-1">
     <div class="card">
       <h2>Динамические и ассинхронные компоненты</h2>
+      <async-component> </async-component>
       <app-button
           :color="oneColor"
           @action="active = 'one'">
         One
       </app-button>
       <app-button
+          ref="myBtn"
           :color="twoColor"
           @action="active = 'two'">Two
       </app-button>
@@ -28,10 +30,21 @@ export default {
       active: 'one' // two
     }
   },
+  mounted() {
+/*    setTimeout(() =>{
+    this.componentName = 'new comp name'
+    }, 1500)*/
+    this.$refs.myBtn.btnLog()
+  },
   components: {AppButton, AppTextOne, AppTextTwo},
   computed: {
-    componentName() {
-      return 'app-text-' + this.active
+    componentName: {
+      get() {
+        return 'app-text-' + this.active
+      },
+      set(value) {
+        console.log('componentName',value)
+      }
     },
     oneColor() {
       return this.active === 'one' ? 'primary' : ''

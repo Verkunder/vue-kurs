@@ -1,4 +1,4 @@
-# 06-vue-components
+# 07-vue-forms
 
 ## Project setup
 ```

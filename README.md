@@ -1,4 +1,4 @@
-# Course_work-2
+# 09-vue-reusability
 
 ## Project setup
 ```

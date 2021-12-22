@@ -1,3 +1,3 @@
 <template>
-  <p>{{ $attrs.value }}</p>
+  <p v-html="$attrs.value"> </p>
 </template>

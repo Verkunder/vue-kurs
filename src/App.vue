@@ -10,7 +10,7 @@
         <input type="text" id="name" v-model.trim="name">
       </div>
 
-<!--      <button class="btn primary" :disabled="name.length === 0">Создать человека</button>-->
+      <button class="btn primary" :disabled="name.length === 0">Создать человека</button>
     </form>
 
     <app-loader v-if="loading"></app-loader>
@@ -74,7 +74,7 @@ export default {
         try {
           const {data} = await axios.get('https://vue-kurs-db-default-rtdb.firebaseio.com/people.json')
           if (!data) {
-            /*throw new Error('Список людей пуст')*/
+            throw new Error('Список людей пуст')
           }
 
           this.people = Object.keys(data).map(key => {

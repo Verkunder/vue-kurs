@@ -1,4 +1,4 @@
-# 08-vue-http
+# Course_work-2
 
 ## Project setup
 ```

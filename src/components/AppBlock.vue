@@ -1,26 +1,25 @@
 <template>
   <div class="container">
     <app-alert
-        v-if="alert === true"
-        title="ВАЖНО!"
-        text="Lorem ipsum dolor sit amet"
-        type="warning"
-        closable="true"
+        v-if="alert"
+        text="Это очень важное сообщение, будьте бдительны"
+        title="Внимание!"
         @close="alert = false"
-    >
-    </app-alert>
+    ></app-alert>
+
     <div class="card">
-      <button class="btn primary" @click="toggleAllert">{{ alert ? 'Скрыть сообщение' : 'Показать сообщение' }}</button>
+      <button class="btn primary" @click="toggleAlert">{{alert ? 'Скрыть' : 'Показать'}} сообщение</button>
     </div>
   </div>
 </template>
 
 <script>
-import AppAlert from "./AppAlert";
-import alertMixin from "../alertMixin";
+import AppAlert from './AppAlert'
+import alertMixin from '../alertMixin'
+
 export default {
-  components: {AppAlert},
-  mixins: [alertMixin]
+  mixins: [alertMixin],
+  components: {AppAlert}
 }
 </script>
 

@@ -1,34 +1,38 @@
 <template>
   <div class="container">
-      <div class="card">
-        <h2 v-color="myColor">No women no cry</h2>
+    <div class="card">
+      <h2>{{ $i18n('app.title') }}</h2>
 
-    <div class="form-control">
-      <label for="inp"> Активный по умолчанию</label>
-      <input v-focus type="text" id="inp">
+      <button class="btn" @click="changeLang">{{ $i18n('app.changeBtn') }}</button>
+      <button class="btn primary" @click="modal = true">Открыть модалку</button>
+
+      <teleport to="#modal">
+        <app-modal
+          v-if="modal"
+          @close="modal = false"
+        ></app-modal>
+      </teleport>
     </div>
-        <button class="btn" @click="myColor = 'darkblue'">Поменять цвет заголовка</button>
-      </div>
   </div>
 </template>
 
 <script>
-import focusDirectiv from "./focusDirectiv";
-import colorDirective from "./ColorDirective";
+import AppModal from './components/AppModal'
 
 export default {
-  directives: {
-    focus: focusDirectiv,
-    color: colorDirective
-  },
+  inject: ['changeI18N'],
   data() {
     return {
-      myColor: 'darkred'
+      modal: false
     }
-  }
+  },
+  methods: {
+    changeLang() {
+      this.changeI18N('en')
+      this.$forceUpdate()
+    }
+  },
+  components: {AppModal}
 }
 </script>
 
-<style scoped>
-
-</style>

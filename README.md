@@ -1,4 +1,4 @@
-# 09-vue-reusability
+# 10-vue-router-prep
 
 ## Project setup
 ```

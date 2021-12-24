@@ -1,38 +1,30 @@
-const App = {
-    data () {
-        return {
-            placeholderString: 'Введите название заметки',
-            title: 'Список заметок',
-            inputValue: '',
-            notes: []
+Vue.createApp ({
+    data: () => ({
+        title: 'Я есть Грут!',
+        myHTML: '<h1> Hello Vue 3 </h1>',
+        person: {
+            firstName: 'Kapustin',
+            lastName: 'Stepan',
+            age: 22
+        },
+        items: [1, 2]
+    }),
+    computed: {
+        eventItems(){
+            return this.items.filter(i => i % 2 === 0);
         }
     },
     methods: {
-        addHandler() {
-            if (this.inputValue !== '') {
-            this.notes.push(this.inputValue)
-            this.inputValue = ''
-            }
+        addItem(){
+            this.items.unshift(this.$refs.myInput.value)
+            this.$refs.myInput.value = ''
         },
-        toApperCase(item) {
-            return item.toUpperCase()
+        remove (i) {
+            this.items.splice(i, 1)
         },
-        removeHandler (idx) {
-            this.notes.splice(idx, 1)
-        }
-    },
-    computed: {
-        dobleComputed() {
-            return this.notes.length * 2
-        }
-    },
-    watch: {
-        inputValue (value) {
-            if (value.length > 10) {
-                this.inputValue = ' '
-            }
+        log (item) {
+            console.log(item)
         }
     }
-}
 
-Vue.createApp(App).mount('#app')
+}).mount ('#app')

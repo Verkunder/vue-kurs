@@ -12,7 +12,7 @@
     </div>
 
     <button class="btn primary" type="submit">Войти</button>
-    <router-link to="/forget"> <button class="btn warning"> Забыл пароль? </button> </router-link>
+    <button class="btn warning" @click="$router.push('/forget')"> Забыл пароль? </button>
   </form>
 </template>
 

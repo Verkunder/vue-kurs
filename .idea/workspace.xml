@@ -5,86 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9bf05d7-4b6a-4af5-902d-c170c92ed6df" name="Changes" comment="and block---9">
-      <change afterPath="$PROJECT_DIR$/src/components/AppEmailBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TheNavbar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Forget.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Mail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/test/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/file-uri-to-path/test/tests.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/asyncworker.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/buffers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/callback.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/converters.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/errors.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/json.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/maybe_types.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/methods.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/new.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/node_misc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/object_wrappers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/persistent.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/scopes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/script.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/string_bytes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/v8_internals.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/v8_misc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/include_dirs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_callbacks.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_callbacks_12_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_callbacks_pre_12_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_converters.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_converters_43_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_converters_pre_43_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_define_own_property_helper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_implementation_12_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_implementation_pre_12_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_json.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_maybe_43_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_maybe_pre_43_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_new.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_object_wrap.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_persistent_12_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_persistent_pre_12_inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_string_bytes.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_typedarray_contents.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_weak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/tools/1to2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/tools/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/tools/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWithDirective.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWithMixins.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ColorDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alertMixin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppAlert.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppBlock.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppModal.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/focusDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translatePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Forget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Forget.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +72,10 @@
       <workItem from="1640263452577" duration="106000" />
       <workItem from="1640263560887" duration="38000" />
       <workItem from="1640263612359" duration="840000" />
-      <workItem from="1640264700944" duration="5055000" />
+      <workItem from="1640264700944" duration="6004000" />
+      <workItem from="1640327038723" duration="281000" />
+      <workItem from="1640328362410" duration="603000" />
+      <workItem from="1640344613263" duration="2760000" />
     </task>
     <task id="LOCAL-00001" summary="and Block - 7">
       <created>1640090286289</created>
@@ -263,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640266883230</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="and block---9">
+      <created>1640270523025</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1640270523025</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

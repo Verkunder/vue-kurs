@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9bf05d7-4b6a-4af5-902d-c170c92ed6df" name="Changes" comment="and block---9">
+    <list default="true" id="c9bf05d7-4b6a-4af5-902d-c170c92ed6df" name="Changes" comment="add Block 10">
+      <change afterPath="$PROJECT_DIR$/src/views/NotFound.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppEmailBody.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppEmailBody.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TheNavbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TheNavbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Forget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Forget.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Mail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Mail.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\Fiveday\vue-kurs\src\views" />
       <recent name="C:\Users\User\Documents\Fiveday\vue-kurs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -76,6 +88,9 @@
       <workItem from="1640327038723" duration="281000" />
       <workItem from="1640328362410" duration="603000" />
       <workItem from="1640344613263" duration="2760000" />
+      <workItem from="1640584781561" duration="1877000" />
+      <workItem from="1640610331067" duration="4793000" />
+      <workItem from="1640673489964" duration="2825000" />
     </task>
     <task id="LOCAL-00001" summary="and Block - 7">
       <created>1640090286289</created>
@@ -196,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640270523025</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add Block 10">
+      <created>1640584799058</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1640584799058</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +247,7 @@
     <MESSAGE value="add block---9" />
     <MESSAGE value="change block---9" />
     <MESSAGE value="and block---9" />
-    <option name="LAST_COMMIT_MESSAGE" value="and block---9" />
+    <MESSAGE value="add Block 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Block 10" />
   </component>
 </project>

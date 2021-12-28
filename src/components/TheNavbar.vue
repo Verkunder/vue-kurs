@@ -1,18 +1,23 @@
 <template>
   <header class="navbar" v-if="visible">
-    <h3>GMail</h3>
+    <h3>Gmail</h3>
     <ul class="navbar-menu">
-      <li><a href="/dashboard">Главная</a></li>
+      <li><router-link to="/dashboard">Главная</router-link></li>
       <li>
-        <a custom to="/mail">Почта</a>
+        <router-link to="/mail" custom v-slot="{ navigate, href }">
+          <a href="#" @click="navigate" :class="{
+            active: $route.path.indexOf(href) !== -1
+          }">Почта</a>
+        </router-link>
       </li>
-      <li><a href="#">Выйти</a></li>
+      <li><a href="#" @click.prevent="logout">Выйти</a></li>
     </ul>
   </header>
 </template>
 
 <script>
 export default {
+  inject: ['logout'],
   props: {
     visible: {
       type: Boolean,
@@ -21,3 +26,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>

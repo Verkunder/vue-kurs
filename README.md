@@ -1,4 +1,4 @@
-# 10-vue-router-prep
+# 10-vue-router
 
 ## Project setup
 ```

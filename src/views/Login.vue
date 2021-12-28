@@ -7,12 +7,15 @@
     </div>
 
     <div class="form-control">
-      <label for="password">Password</label>
+      <label for="password">Пароль</label>
       <input type="password" id="password" v-model="password">
     </div>
 
     <button class="btn primary" type="submit">Войти</button>
-    <button class="btn warning" @click="$router.push('/forget')"> Забыл пароль? </button>
+    <router-link to="/forget" v-slot="{ navigate }">
+      <button class="btn warning" @click="navigate">Забыл пароль?</button>
+    </router-link>
+    <router-link to="/forget">Забыл пароль?</router-link>
   </form>
 </template>
 
@@ -29,10 +32,11 @@ export default {
       return this.email !== '' && this.password !== ''
     }
   },
+  inject: ['login'],
   methods: {
     submit() {
       if (this.isValid) {
-        // login
+        this.login()
       }
     }
   }

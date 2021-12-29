@@ -1,4 +1,4 @@
-# 10-vue-router
+# 11-vue-vuex
 
 ## Project setup
 ```

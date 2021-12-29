@@ -1,0 +1,24 @@
+<template>
+  <header class="navbar">
+    <strong> Счётчик {{counter}} </strong>
+
+    <button class="btn primary" @click="add">Добавить 5</button>
+  </header>
+</template>
+
+<script>
+  export default {
+    computed: {
+      counter () {
+       return this.$store.state.counter
+      }
+    },
+    methods: {
+      add () {
+        this.$store.commit('add', {
+          value: 5
+        })
+      }
+    }
+  }
+</script>

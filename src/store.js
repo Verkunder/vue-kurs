@@ -15,6 +15,21 @@ export default createStore({
         }
     },
     getters: {
-
+        counter (state) {
+            if (state.counter > 30) {
+                state.counter = 0
+            }
+            return state.counter
+        },
+        doublecounter (_, getters) {
+            return getters.counter * 2
+        }
+    },
+    actions: {
+        incrementAsync(context, payload) {
+            setTimeout(() => {
+                context.commit('add', payload)
+            }, payload.delay)
+        }
     }
 })

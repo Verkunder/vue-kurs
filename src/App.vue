@@ -2,28 +2,27 @@
   <the-navbar></the-navbar>
   <div class="container with-nav">
     <div class="card">
-      <h1>Про Vuex</h1>
-      <h2>Счётчик {{$store.getters.counter}} ({{$store.getters.doublecounter}})</h2>
-      <button class="btn" @click="increment">Инкрементировать</button>
-      <button class="btn danger" @click="incrementAsync"> Добавить 10 </button>
+      <h1>{{uppercaseTitle}}</h1>
+      <h2>Счетчик {{ counter }} ({{ doubleCounter }})</h2>
+      <button class="btn primary" @click="add">Добавить</button>
+      <button class="btn danger" @click="incrementAsync({value: 10,delay: 200})">Добавить 10</button>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapMutations, mapActions } from 'vuex'
 import TheNavbar from './TheNavbar'
+
 export default {
   components: {TheNavbar},
+  computed: {
+    ...mapGetters(['uppercaseTitle']),
+    ...mapGetters('count', ['counter', 'doubleCounter'])
+  },
   methods: {
-    increment () {
-      this.$store.commit('increment')
-    },
-    incrementAsync () {
-       this.$store.dispatch('incrementAsync', {
-         value: 10,
-         delay: 1000
-       })
-    }
+    ...mapMutations({add: 'count/increment'}),
+    ...mapActions('count', ['incrementAsync']),
   }
 }
 </script>

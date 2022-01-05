@@ -1,4 +1,4 @@
-# 11-vue-vuex
+# 12-vue-composition
 
 ## Project setup
 ```
@@ -17,12 +17,3 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Если 
-```
-npm run serve
-```
-#### Выдал ошибку, необходимо удалить папку node_modules и выполнить команду
-```
-npm install
-```

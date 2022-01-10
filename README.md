@@ -15,5 +15,9 @@ npm run serve
 npm run build
 ```
 
+### For authorization from Docker container use
+```
+firebase login --no-localhost
+```
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,4 +1,4 @@
-# Course_work-2
+# vue-3-week-my
 
 ## Project setup
 ```

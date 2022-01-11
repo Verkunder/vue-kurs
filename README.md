@@ -1,4 +1,4 @@
-# vue-3-week-my
+# 13-vue-ts-prep
 
 ## Project setup
 ```
@@ -15,9 +15,5 @@ npm run serve
 npm run build
 ```
 
-### For authorization from Docker container use
-```
-firebase login --no-localhost
-```
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

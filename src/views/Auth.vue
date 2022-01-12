@@ -17,46 +17,16 @@
       <input type="password" id="password" v-model="password" @blur="pBlur">
       <small v-if="pError">{{pError}}</small>
     </div>
-    <button class="btn primary" type="submit">Enter</button>
+    <button class="btn primary" type="submit" :disabled="isSubmitting || isToManyAttempts">Enter</button>
+    <span class="text-danger" v-if="isToManyAttempts">Too many attempts, please try again later</span>
   </form>
 </template>
 
 <script>
-import * as yup from 'yup'
-import {useField, useForm} from 'vee-validate'
+import {useLoginForm} from "../use/login-form";
 export default {
     setup() {
-      const {handleSubmit, isSubmitting} = useForm()
-
-      const {value: email, errorMessage: eError, handleBlur: eBlur} = useField(
-          'email',
-          yup
-              .string()
-              .trim()
-              .required('Enter Email')
-              .email('E-mail is not correct')
-      )
-
-      const {value: password, errorMessage: pError, handleBlur: pBlur} = useField(
-          'password',
-          yup
-            .string()
-            .trim()
-            .required('Enter Password')
-            .min(6, 'Password is not correct')
-      )
-      const onSybmit = handleSubmit(values => {
-        console.log('Form', values)
-      })
-      return {
-        email,
-        password,
-        eError,
-        eBlur,
-        pError,
-        pBlur,
-        onSybmit
-      }
+      return {...useLoginForm()}
     }
 }
 </script>

@@ -1,4 +1,4 @@
-# 13-vue-ts-prep
+# vue-practice-app
 
 ## Project setup
 ```

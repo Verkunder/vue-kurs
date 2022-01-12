@@ -10,7 +10,7 @@ export type UsableUsers = Promise<{users: Ref<User[] | undefined>}>
 
 export async function useUsers(): UsableUsers {
   const loading = ref(false)
-  const {request, response: users} = useFetch<User[]>('11https://jsonplaceholder.typicode.com/users')
+  const {request, response: users} = useFetch<User[]>('https://jsonplaceholder.typicode.com/users')
 
   if (!loading.value) {
     await request()

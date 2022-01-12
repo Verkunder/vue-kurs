@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import auth from "../views/Auth";
+import store from '../store'
 
 const routes = [
   {
@@ -7,7 +9,8 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      layout: 'main'
+      layout: 'main',
+      auth: true
     }
   },
   {
@@ -15,7 +18,8 @@ const routes = [
     name: 'Help',
     component: () => import('../views/Help.vue'),
     meta: {
-      layout: 'main'
+      layout: 'main',
+      auth: true
     }
   },
   {
@@ -33,6 +37,14 @@ const router = createRouter({
   routes
 })
 router.beforeEach((to,from,next) => {
+    const requiredAuth = to.meta.auth
 
+  if (requiredAuth && store.getters['auth/isAuthenticated']) {
+    next()
+  } else if (requiredAuth && !store.getters['auth/isAuthenticated']) {
+    next('/auth?massage=auth')
+  } else {
+    next()
+  }
 })
 export default router

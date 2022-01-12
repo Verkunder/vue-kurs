@@ -42,7 +42,7 @@ router.beforeEach((to,from,next) => {
   if (requiredAuth && store.getters['auth/isAuthenticated']) {
     next()
   } else if (requiredAuth && !store.getters['auth/isAuthenticated']) {
-    next('/auth?massage=auth')
+    next('/auth?message=auth')
   } else {
     next()
   }

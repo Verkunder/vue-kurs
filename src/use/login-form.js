@@ -1,8 +1,10 @@
 import {useField, useForm} from "vee-validate";
 import * as yup from "yup";
 import {computed, watch} from "vue";
+import {useStore} from 'vuex'
 
 export function useLoginForm() {
+    const store = useStore()
 
     const {handleSubmit, isSubmitting, submitCount} = useForm()
 
@@ -29,8 +31,9 @@ export function useLoginForm() {
             setTimeout(() =>submitCount.value = 0, 1500)
         }
     })
-    const onSybmit = handleSubmit(values => {
+    const onSybmit = handleSubmit( async values => {
         console.log('Form', values)
+       await store.dispatch('auth/login', values)
     })
     return {
         email,

@@ -4,6 +4,7 @@
     <template #header>
       <button class="btn primary" @click="modal = true">Create</button>
     </template>
+    <request-filter></request-filter>
     <request-table :requests="requests"></request-table>
 
     <teleport to="body">
@@ -20,6 +21,7 @@ import AppPage from "../components/ui/AppPage";
 import RequestTable from "../components/request/RequestTable";
 import AppModal from "../components/ui/AppModal";
 import RequestModal from "../components/request/RequestModal";
+import RequestFilter from "../components/request/RequestFilter";
 import {ref, computed, onMounted} from 'vue'
 import {useStore} from "vuex";
 import AppLoader from "../components/ui/AppLoader";
@@ -38,6 +40,6 @@ export default {
       modal, requests, loading
     }
   },
-  components: {AppLoader, AppPage, RequestTable, AppModal, RequestModal}
+  components: {AppLoader, AppPage, RequestTable, AppModal, RequestModal, RequestFilter}
 }
 </script>

@@ -1,5 +1,6 @@
 import axios from "../../axios/request";
 import store from "../index"
+import request from "../../axios/request";
 
 export default {
     namespaced: true,
@@ -9,8 +10,8 @@ export default {
         }
     },
     mutations: {
-        setRequests(state, requests) {
-            state.requests = requests
+        setRequests(state, request) {
+            state.request = request
         },
         addRequest(state, request) {
             state.request.push(request)
@@ -26,6 +27,19 @@ export default {
                     value: 'Application successfully created',
                     type: 'primary'
                 }, {root: true})
+            } catch (e) {
+                dispatch('setMessage', {
+                    value: e.message,
+                    type: 'danger'
+                }, {root: true})
+            }
+        },
+        async load({ commit, dispatch }) {
+            try {
+                const token = store.getters['auth/token']
+                const {data} = await axios.get(`/request.json?auth=${token}`)
+                const requests = Object.keys(data).map(id => ({...data[id], id}))
+                commit('setRequests', requests)
             } catch (e) {
                 dispatch('setMessage', {
                     value: e.message,

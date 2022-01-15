@@ -3,9 +3,13 @@
 </template>
  
 <script>
-import AppPage from "../components/ui/AppPage"
+import {useRoute} from "vue-router"
+import AppPage from "../components/ui/AppPage.vue"
     export default {
-        components: {AppPageAppPage}
+        setup() {
+        const route = useRoute
+        },
+        components: {AppPage}
     }
 </script>
 

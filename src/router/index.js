@@ -23,7 +23,7 @@ const routes = [
     }
   },
   {
-    path: '/request/:id',
+    path: '/requests/:id',
     name: 'Request',
     component: () => import('../views/Request.vue'),
     meta: {

@@ -12,12 +12,13 @@
           <option value="pending">Pending</option>
       </select>
     </div>
+    <button class="btn warning" v-if="isActive" @click="reset">Clear</button>
 
   </div>
 </template>
 
 <script>
-import {ref, watch} from 'vue'
+import {ref, watch, computed} from 'vue'
 
 export default {
   emits: ['update:modelValue'],
@@ -33,8 +34,14 @@ export default {
       })
     })
 
+    const isActive = computed(() => name.value || status.value)
+
     return {
-      name, status
+      name, status, isActive,
+      reset: () => {
+        name.value = '',
+        status.value = null
+      }
     }
 
   }

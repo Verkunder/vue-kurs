@@ -9,7 +9,7 @@
         <router-link to="/help">Help</router-link>
       </li>
       <li>
-        <a href="#">Message</a>
+        <a href="#" @click.prevent="open">Message</a>
       </li>
       <li>
         <a href="#" @click.prevent="logout">Exit</a>
@@ -30,7 +30,8 @@ export default {
       logout: () => {
         store.commit('auth/logout')
         router.push('/auth')
-      }
+      },
+      open: () => store.commit('openSidebar')
     }
   }
 }
